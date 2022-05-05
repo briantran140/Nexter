@@ -5,6 +5,9 @@
 
 .heading-1 {
   @extend %heading;
+  font-size: 4.5rem;
+  color: $color-grey-light-1;
+  line-height: 1;
 }
 
 .heading-2 {
@@ -43,14 +46,14 @@
 }
 
 .btn {
-  font-family: font-display;
+  background-color: $color-primary;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: $font-display;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-color: $color-primary;
-  border-radius: 0;
   padding: 1.8rem 3rem;
-  border: none;
-  color: #fff;
   cursor: pointer;
   transition: all 0.2s;
 
