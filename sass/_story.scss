@@ -11,6 +11,12 @@
       ),
       url(../img/back.jpg);
     align-items: center;
+    background-size: cover;
+
+    @include respond(medium) {
+      grid-column: 1 / -1;
+      padding: 6rem;
+    }
   }
 
   &__img {
@@ -19,6 +25,11 @@
       grid-column: 2 / 6;
       grid-row: 2 / 6;
       box-shadow: 0 2rem 5rem rgba(black, 0.1);
+
+      @include respond(medium) {
+        grid-column: 1 / 5;
+        grid-row: 1 / -1;
+      }
     }
 
     &--2 {
@@ -27,6 +38,11 @@
       grid-row: 4 / 6;
       z-index: 20;
       box-shadow: 0 2rem 5rem rgba(black, 0.1);
+
+      @include respond(medium) {
+        grid-row: 1 / -1;
+        width: 100%;
+      }
     }
   }
 
@@ -37,6 +53,11 @@
     align-content: center;
     justify-items: start;
     padding: 6rem 8vw;
+
+    @include respond(medium) {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;
+    }
   }
 
   &__text {

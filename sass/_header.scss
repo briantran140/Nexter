@@ -16,6 +16,14 @@
   padding: 8rem;
   padding-top: 4rem;
 
+  @include respond(medium) {
+    grid-column: 1 / -1;
+  }
+
+  @include respond(small) {
+    padding: 5rem;
+  }
+
   &__logo {
     height: 3rem;
     justify-self: center;

@@ -8,12 +8,24 @@
   grid-row-gap: 3vh;
   padding: 3rem;
 
+  @include respond(medium) {
+    grid-column: 1 / -1;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     grid-column-gap: 1.7vw;
     grid-row-gap: 5vh;
     align-items: center;
+
+    @include respond(medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @include respond(small) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {
